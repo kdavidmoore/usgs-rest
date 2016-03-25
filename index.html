@@ -1,0 +1,61 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>Streams of Georgia</title>
+	<link rel="stylesheet" type="text/css" href="footables/css/footable.core.css">
+	<link rel="stylesheet" type="text/css" href="footables/css/footable.standalone.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<div id="header">
+	<div id="which-sym">
+		<h2>Search the Streams of Georgia</h2>
+		<h4>Data courtesy USGS REST Service</h4>
+	</div>
+	<form id="search-form">
+		<input type="text" id="search-str" placeholder="Search by water body name or monitoring location">
+		<input type="submit" value="Search">
+	</form>
+</div>		
+
+<div id="filter-wrapper">
+	<input type="text" id="filter" placeholder="Enter a data filter here">
+	<table class="footable table" data-filter="#filter" data-page-navigation=".pagination" data-page-size="5">
+	<thead>
+		<tr>
+			<th data-hide="phone">Time Sampled</th>
+			<th data-hide="phone">Site Name</th>
+			<th data-hide="phone">Lat</th>
+			<th data-hide="phone">Long</th>
+			<th data-hide="phone">Parameter</th>
+			<th data-hide="phone">Value</th>
+		</tr>
+	</thead>
+	<tbody id="table-body">
+		<tr>
+			<td>-</td>
+			<td>-</td>
+			<td>-</td>
+			<td>-</td>
+			<td>-</td>
+		</tr>
+	</tbody>
+	<tfoot>
+		<tr>
+			<td colspan="10">
+				<div class="pagination pagination-centered"></div>
+			</td>
+		</tr>
+	</tfoot>
+	</table>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script type="text/javascript" src="footables/js/footable.js"></script>
+<script type="text/javascript" src="footables/js/footable.sort.js"></script>
+<script type="text/javascript" src="footables/js/footable.filter.js"></script>
+<script type="text/javascript" src="footables/js/footable.paginate.js"></script>
+<script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>

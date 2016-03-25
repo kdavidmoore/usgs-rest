@@ -1,0 +1,17 @@
+body {
+	font-style: Helvetica, sans-serif;
+}
+
+#table-wrapper {
+	width: 80%;
+	margin: auto;
+	padding: 15px;
+}
+
+.red {
+	color: red;
+}
+
+.green {
+	color: green;
+}
